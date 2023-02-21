@@ -7,6 +7,34 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+form{
+    color: var(--textColor);
+}
+
+.form-control{
+    color: var(--textColor);
+    border: 1px solid #00ff11;
+    width: 50%;
+    background-color: var(--maincColor);
+
+}
+::placeholder{
+    color: var(--textColor);
+}
+
+.button {
+    background-color:  var(--maincColor);
+    border: none;
+    color: var(--textColor);
+    padding: 10px 32px;
+    text-align: center;
+    border: 1px solid #00ff11;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
 :root{
     --maincColor: #000000;
     --mainColorLight: #303031;
