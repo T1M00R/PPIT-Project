@@ -1,25 +1,25 @@
 import React from "react";
 import "../styles/App.css"
 
-export class Macros extends React.Component{
+export class Login extends React.Component{
 
     render() {
         return (
             <form>
-            <h1>Macronutrient Calculator</h1>
+            <h1>Log In!</h1>
             <br></br>
             <br></br>
             <br></br>
             <div className="form">
-              <input type="number" 
-              className="form-control" 
-              placeholder="       Enter Calories Needed"/>
+                <input type="email" 
+                className="form-control" 
+                placeholder="       Enter email"/>
             </div>
-    
+
             <div className="form">
-              <input type="number" 
-              className="form-control" 
-              placeholder="       Enter Weight in LBS"/>
+                <input type="password" 
+                className="form-control" 
+                placeholder="       Enter password"/>
             </div>
     
             <div className="d-grid">
@@ -32,4 +32,4 @@ export class Macros extends React.Component{
     }
 }
 
-export default Macros;
+export default Login;

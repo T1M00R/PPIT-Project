@@ -1,7 +1,9 @@
 import { useRef } from "react";
+import React, { useState } from 'react';
 //menu and close menu icons
 import {FaBars, FaTimes, FaUserCircle} from "react-icons/fa";
 import "../styles/App.css"
+import DropDown from './dropDown';
 
 function Navbar(){
     const navRef = useRef();
@@ -9,6 +11,9 @@ function Navbar(){
     const showNavbar = ()=>{
         navRef.current.classList.toggle("responsive_nav");
     }
+
+    //setting the state of drop down box to false
+    const[openDropdown, setOpenDropdown] = useState(false);
 
     return(
         <header>
@@ -22,14 +27,21 @@ function Navbar(){
                 {/* if the page is too small then a button will appear to see the nav bar */}
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
+                    
                 </button>
             </nav>
-            <button className="userIcon">
+            {/*button with react icon that shows a drop down box when clicked*/}
+            <button className="userIcon" onClick={()=>setOpenDropdown((prev) => (!prev))}>
                     <FaUserCircle/>
                 </button>
             <button className="nav-btn" onClick={showNavbar}>
                 <FaBars/>
             </button>
+
+            {/*shows dropdown box variable to set false*/}
+            {
+                openDropdown && <DropDown/>
+            }
         </header>
     );
 }

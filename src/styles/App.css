@@ -11,6 +11,16 @@ form{
     color: var(--textColor);
 }
 
+hr{
+    border-color: #00ff11;
+}
+
+.list{
+    color: var(--textColor);
+    list-style-type: none;
+    text-align: left;
+}
+
 .form-control{
     color: var(--textColor);
     border: 1px solid #00ff11;
@@ -62,6 +72,38 @@ div{
     justify-content: space-between;
     height: 80px;
     text-align: center;
+    color: var(--textColor);
+}
+
+/*drop down box styling*/
+.dropDown{
+    position: absolute;
+    top: 5.5rem;
+    right: 9rem;
+    width: 160px;
+    height: 90px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--textColor)
+}
+
+/*square rotated 45 degrees for top of drop down box*/
+.dropDown::before{
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    right: 6.9rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: black;
+    border-left: 1px solid var(--textColor);
+    border-top: 1px solid var(--textColor)
+}
+
+a{
+    color: var(--textColor);
+    text-decoration: none;
 }
 
 nav a{
@@ -74,6 +116,7 @@ nav a:hover {
     color: var(--secondaryCOlor);
 }
 
+/*styling for react icon button*/
 .userIcon{
     padding: 5px;
     cursor: pointer;
@@ -81,6 +124,7 @@ nav a:hover {
     outline: none;
     color: var(--textColor);
     font-size: 1.8rem;
+    padding-left: 0%;
 }
 
 header .nav-btn {
