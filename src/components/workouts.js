@@ -38,19 +38,7 @@ export class Workouts extends React.Component{
                     </div> 
             </body>
         
-
-            
-                
-                
-                
-            
-            
-
-                
-            
-            
-            
-            
+    
           
         );
     }

@@ -4,6 +4,7 @@ import {Calories} from './components/calories';
 import {Macros} from './components/macros';
 import {Login} from './components/login';
 import {Signup} from './components/signup';
+import {Home} from './components/home';
 import Navbar from './components/Navbar';
 import DropDown from './components/dropDown';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
@@ -23,7 +24,7 @@ class App extends React.Component {
 
       {/* using BrowserRouter to switch between components */}
       <Routes>
-       <Route path='/' element={<home></home>}></Route>
+       <Route path='/' element={<Home></Home>}></Route>
        <Route path='/workouts' element={<Workouts></Workouts>}></Route>
        <Route path='/calories' element={<Calories></Calories>}></Route>
        <Route path='/macros' element={<Macros></Macros>}></Route>

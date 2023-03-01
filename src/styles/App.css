@@ -24,6 +24,17 @@ div.gallery {
   }
 
 /* End of workouts page */
+
+.homeImage{
+   position: relative;
+   height: auto;
+   width: 100%;
+}
+
+.homeTxt{
+    text-align: center;
+}
+
 *{
     padding: 0;
     margin: 0;
