@@ -24,7 +24,6 @@ div.gallery {
   }
 
 /* End of workouts page */
-
 *{
     padding: 0;
     margin: 0;
@@ -198,5 +197,12 @@ header .nav-btn {
     nav a{
         font-size: 1.3rem;
     }
+
+    
+          
+    
+    
+    
+
 
 }
