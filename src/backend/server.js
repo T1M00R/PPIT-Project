@@ -1,3 +1,4 @@
+//#region Initialisation of server
 // Imports n that
 const express = require('express')
 const app = express()
@@ -42,41 +43,92 @@ async function main() {
   // use `await mongoose.connect('mongodb://user:password@localhost:27017/test');` if your database has auth enabled
 }
 
+
+//#endregion
+
+
+//#region UserSchema and UserModel Creation
+
 // Create a schema 
 const userSchema = new mongoose.Schema({
 
 
-    
-    name: String,
-    password: String,
-    email: String,
-    macronutrients: Array   // protein, fats, carbs ...
-    
+  fname: String,
+  lname: String,
+  email: {type:String, unique: true},
+  password: String,
+
+  
 });
 
 // Select database to use 
-const taskModel = mongoose.model('UserData', userSchema);
+const userModel = mongoose.model('UserData', userSchema);
 
 // suppress warning
 mongoose.set('strictQuery', true);  
 
-// Post data to MongoDB
-app.post('/api/tasks',(req,res)=>{
-  console.log(req.body);
 
-  // Create a new document with fields parsed from form
-  userModel.create({
+//#endregion
 
-    name: String,
-    password: String,
-    email: String,
-    macronutrients: Array
 
-    
-  })
+
+//#region POST, GET, UPDATE, DELETE requests
+
+//sign up functionality
+app.post("/api/signup", async (req, res) => {
+  const { fname, lname, email, password } = req.body;
+
   
-  res.send('Data Recieved');
-})
+
+  //variable to encrypt password
+  const encryption = await bcrypt.hash(password, 10);
+
+  try {
+
+    //if user already exists give back error
+    const oldUser = await User.findOne({email});
+    if(oldUser){
+
+        return res.json({error: "User Exists" });
+    }
+
+    //data that will be on database
+    await userModel.create({
+      fname: String,
+      lname: String,
+      email: String,
+      password: encryption,
+    });
+
+    console.log("User successfully created")
+
+    res.send({ status: "ok" });
+  } catch (error) {
+    res.send({ status: "error" });
+  }
+});
+
+
+// // Post data to MongoDB
+// app.post('/api/tasks',(req,res)=>{
+//   console.log(req.body);
+
+//   // Create a new document with fields parsed from form
+//   userModel.create({
+
+//     name: String,
+//     password: String,
+//     email: String,
+//     macronutrients: Array
+
+  
+//   })
+
+//   res.send('Data Recieved');
+// })
+
+
+
 
 // // Retrieve tasks from database
 // app.get('/api/tasks', (req, res) => {
@@ -113,6 +165,12 @@ app.post('/api/tasks',(req,res)=>{
 //     res.status(200).send(data);
 //   })
 // })
+
+
+//#endregion
+
+
+
 
 // // get main html file
 // app.get('*', (req,res) =>{
