@@ -26,7 +26,7 @@ export class Workouts extends React.Component{
 
                 </header>
                 
-                <h3>Developer note(Hide sections on category click)</h3>
+                <h3>Developer note(Hide sections on category click)</h3><br/><br/>
                 <section class="hidden">
                     <h1>List of workouts that target the upper body.</h1> 
                     <br/>
@@ -114,22 +114,44 @@ export class Workouts extends React.Component{
 
                     
                 </section>
-
+                <br/>
+                <br/>
                 <section class="hidden">
                     <h1>List of workouts that target the lower body.</h1>
+                        <br/>
+                        <br/>
                     <ul>
-                        <li>exercise one</li>
-                        <li>exercise two</li>
-                        <li>exercise three</li>
+                        <li>Dumbbell Lunge</li>
+                        <li>Dumbbell Shoulder Squat</li>
+                        <li>Bulgarian Split Squat</li>
+                        <li>Deadlift</li>
+                        <li>Hip Thrust</li>
+                        <li>Side Lunge</li>
+                        <li>Weighted Step Up</li>
+                        <li>Good Morning</li>
+                        <li>Barbell Jammer Press</li>
+
                     </ul>
                 </section>
-
+                <br/>
+                <br/>
                 <section>
                     <h1>List of workouts that target the core.</h1>
+                    <br/>
+                        <br/>
                     <ul>
-                        <li>exercise one</li>
-                        <li>exercise two</li>
-                        <li>exercise three</li>
+                        <li>Plank</li>
+                        <li>Glute Bridge</li>
+                        <li>Flutter Kicks</li>
+                        <li>Superman</li>
+                        <li>TRX Row</li>
+                        <li>Hollow Body Hold</li>
+                        <li>Russian Twist</li>
+                        <li>Barbell Rollout/Plank Walkout</li>
+                        <li>Hanging Leg Raises</li>
+                        <li>L-Sit</li>
+                        <li>Toes To Bar</li>
+
                     </ul>
                 </section>
 
