@@ -11,7 +11,7 @@ export class Home extends React.Component{
             <body>
                    <div className="homeImage">
                         <h1 className="homeTxt">Welcome to Weights & Plates</h1>
-                        <img src={home}  alt="home image"/>
+                        
                     </div>
             </body>
           
