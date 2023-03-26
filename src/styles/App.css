@@ -35,21 +35,36 @@
   .beginner {
     color: lightgreen;
     text-align: left;
-    padding: 20;
-    margin-left: 20;
+    align-items: left;
+    border: 2px solid #00ff11;
+    margin-top: 10px;
+    margin-left: 200px;
+    padding: 10px;
+    width: 20%;
+    height: 300px;
   }
 
   .intermediate {
     color: blue;
-    text-align: center;
-    padding: 20;
+    text-align: left;
+    align-items: center;
+    border: 2px solid #00ff11;
+    margin-top: -300px;
+    margin-left: 550px;
+    padding: 10px;
+    width: 20%;
+    height: 300px;
   }
 
   .advanced {
     color: red;
-    text-align: right;
-    padding: 20;
-    margin-right: 20;
+    text-align: left;
+    border: 2px solid #00ff11;
+    margin-top: -300px;
+    margin-left: 900px;
+    padding: 10px;
+    width: 20%;
+    height: 300px;
   }
 
 
@@ -134,7 +149,7 @@ div{
 .dropDown{
     position: absolute;
     top: 5.5rem;
-    right: 9rem;
+    right: 7rem;
     width: 160px;
     height: 90px;
     padding: 15px;

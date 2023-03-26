@@ -54,6 +54,11 @@ export class Login extends Component {
       <form onSubmit={this.handleSubmit}>
         <h1>Log In</h1>
 
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
         <div className="form">
           <input type="email" 
           className="form-control" 

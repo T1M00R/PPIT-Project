@@ -8,11 +8,6 @@ export class Workouts extends React.Component{
     render() {
         return (
             
-            <html>
-                <head>
-                    <title>Calisthenics Workouts</title>
-                    
-                </head>
                 <body>
                     <div class="img1">
                         <img width={300} src={muscles} alt="Muscular anatomy chart"/>
@@ -27,7 +22,6 @@ export class Workouts extends React.Component{
                         <h1>Core</h1>
                     </div>
                 </body>
-            </html>
         )
     }
 
