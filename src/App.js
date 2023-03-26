@@ -1,12 +1,11 @@
 import './styles/App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import {Calories} from './components/calories';
 import {Macros} from './components/macros';
 import {Login} from './components/login';
 import {Signup} from './components/signup';
 import {Home} from './components/home';
 import Navbar from './components/Navbar';
-import DropDown from './components/dropDown';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Workouts from './components/workouts';
 
