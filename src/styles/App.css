@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 
 /* Workouts page */
+
+.workouts {
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img1 {
+    width: 300;
+    padding: 20px;
+    text-align: left;
+}
+
+.img2 {
+    
+    width: 300;
+    padding: 20px;
+    text-align:left;
+}
+
+/* End of workouts page */
+
+/* Levels page */
 .category {
     font-weight: bold;
   }
@@ -30,7 +53,7 @@
   }
 
 
-/* End of workouts page */
+/* End of levels page */
 
 *{
     padding: 0;

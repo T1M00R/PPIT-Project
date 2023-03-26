@@ -7,7 +7,8 @@ import {Signup} from './components/signup';
 import {Home} from './components/home';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import Workouts from './components/workouts';
+import {Workouts} from './components/workouts';
+import { Level } from './components/level';
 
 class App extends React.Component {
 
@@ -25,6 +26,7 @@ class App extends React.Component {
       <Routes>
        <Route path='/' element={<Home></Home>}></Route>
        <Route path='/workouts' element={<Workouts></Workouts>}></Route>
+       <Route path='/level' element={<Level></Level>}></Route>
        <Route path='/calories' element={<Calories></Calories>}></Route>
        <Route path='/macros' element={<Macros></Macros>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>

@@ -22,6 +22,7 @@ function Navbar(){
             <nav ref={navRef}>
                 <a href="/">Home</a>
                 <a href="/workouts">Workouts</a>
+                <a href="/level">Level</a>
                 <a href="/calories">Calories</a>
                 <a href="/macros">Macronutrients</a>
                 {/* if the page is too small then a button will appear to see the nav bar */}
