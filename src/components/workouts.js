@@ -8,177 +8,55 @@ export class Workouts extends React.Component{
     render() {
         return (
             
-            
+            <html>
+                <link rel="stylesheet" href="app.css"></link>
+                <head>
+                    <title>Calisthenics Workouts</title>
+                </head>
                  
             <body>
 
-                <header>
-                    {/* Link to appropriate workouts */}
-                    <section>
-                        <nav>
-                            <ul>
-                            <li><a href="#">Upper Body</a></li>
-                            <li><a href="#">Lower Body</a></li>
-                            <li><a href="#">Core</a></li>
-                            </ul>
-                        </nav>
-                    </section>
+                <div class="workouts">
 
-                </header>
+                <h1>Calisthenics Workouts</h1>
+                <div class="category beginner">
+                    <h2>Beginner</h2>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=IODxDxX7oi4">Push-ups</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=MuvB_F2ynD4">Squats</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=wrwwXE_x-pQ">Lunges</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=b75M62-tsxw">Plank</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=MKmrqcoCZ-M">Crunches</a></li>
+                    </ul>
+                </div>
+                <div class="category intermediate">
+                    <h2>Intermediate</h2>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=J0DnG1_S92I">Diamond push-ups</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=A-cFYWvaHr0">Jump squats</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=HBYGeyb4sSM">Bulgarian split squats</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=rCxF2nG9vQ0">Side plank</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=Pr1ieGZ5atk">Hanging leg raises</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=eGo4IYlbE5g">Pull up</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=Qv6j5gZyBQ8&t=60s">L sit</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=kw6TY9kzZ0I">Tucked planche</a></li>
+                    </ul>
+                </div>
                 
-                <h3>Developer note(Hide sections on category click)</h3><br/><br/>
-                <section class="hidden">
-                    <h1>List of workouts that target the upper body.</h1> 
-                    <br/>
-                    <p>The upper body consists of chest, back, shoulders, biceps and triceps.
-                        The vast majority of upper body exercises will fall into one of the following six categories:
-                        <br/>
-                        <br/>
-                        <ol>
-                            <li><h3>Horizontal Pushing</h3></li><p>A horizontal pushing exercise is any movement in which the weight is being pushed out in front of you so that it’s traveling away from your torso in a horizontal plane. Most chest exercises fit into this category. For example:</p>
-
-                                {/* Exercises block */}
-                                <ul>
-                                    <li>Bench Press</li>
-                                    <li>Incline Bench Press</li>
-                                    <li>Decline Bench Press</li>
-                                    <li>Flat/Incline/Decline Chest Press Machine</li>
-                                    <li>Pushups</li>
-                                    <li>Dumbbell/Cable/Machine Flyes</li>
-
-
-                                </ul>
-                                
-                                <br/>
-                            <li><h3>Horizontal Pulling</h3></li><p>A horizontal pulling exercise is any movement in which the weight is being pulled in towards your torso from out in front of you in a horizontal plane. Most back “rowing” exercises fit into this category. For example:</p>
-                                <ul>
-                                    <li>Bent Over Barbell Rows</li>
-                                    <li>Bent Over Dumbbell Rows</li>
-                                    <li>Seated Cable Rows</li>
-                                    <li>T-Bar Rows</li>
-                                    <li>Chest Supported Rows</li>
-                                    <li>Inverted Rows</li>
-                                    <li>Various Machine Rows</li>
-                                    <li>Various Rear Delt Exercises</li>
-                                </ul>
-                                
-                                <br/>
-                            <li><h3>Vertical Pushing</h3></li><p>A vertical pushing exercise is any movement in which the weight is being pushed upwards in relation to your torso in a vertical plane. Most shoulder exercises fit into this category. For example:</p>
-                                <ul>
-                                    <li>Barbell Shoulder Press</li>
-                                    <li>Dumbbell Shoulder Press</li>
-                                    <li>Machine Shoulder Press</li>
-                                    <li>Lateral Raises</li>
-                                    <li>Front Raises</li>
-                                    
-                                </ul>
-                                
-                                <br/>
-                            <li><h3>Vertical Pulling</h3></li><p>A vertical pulling exercise is any movement in which the weight is being pulled down towards your torso in a vertical plane. Most back “pull-up/pull-down” exercises fit into this category. For example:</p>
-                                <ul>
-                                    <li>Pull-Ups</li>
-                                    <li>Chin-Ups</li>
-                                    <li>Lat Pull-Downs</li>
-                                    
-                                </ul>
-                                
-                                <br/>
-                            <li><h3>Elbow Flexion</h3></li><p>An elbow flexion exercise is any movement in which the weight is being pulled towards your torso strictly as a result of flexing at the elbow. Most biceps curling exercises fit into this category. For example:</p>
-                                <ul>
-                                    <li>Barbell Curls</li>
-                                    <li>Dumbbell Curls</li>
-                                    <li>Cable Curls</li>
-                                    <li>Preacher Curls</li>
-                                    <li>Hammer Curls</li>
-                    
-                                </ul>
-                                
-                                <br/>
-                            <li><h3>Elbow Extension</h3></li><p>An elbow extension exercise is any movement in which the weight is being moved away from your torso strictly as a result of extending at the elbow. Most triceps extension exercises fit into this category. For example:</p>
-                                <ul>
-                                    <li>Tricep Pushdowns</li>
-                                    <li>Overhead Dumbbell Extensions</li>
-                                    <li>Skull Crushers</li>
-                                    <li>Tricep Kickbacks</li>
-                                    
-                                </ul>
-                                
-                                <br/>
-                        </ol>
-                        </p>
-
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-
-                    
-                </section>
-                <br/>
-                <br/>
-                <section class="hidden">
-                    <h1>List of workouts that target the lower body.</h1>
-                        <br/>
-                        <br/>
+                <div class="category advanced">
+                    <h2>Advanced</h2>
                     <ul>
-                        <li>Dumbbell Lunge</li>
-                        <li>Dumbbell Shoulder Squat</li>
-                        <li>Bulgarian Split Squat</li>
-                        <li>Deadlift</li>
-                        <li>Hip Thrust</li>
-                        <li>Side Lunge</li>
-                        <li>Weighted Step Up</li>
-                        <li>Good Morning</li>
-                        <li>Barbell Jammer Press</li>
-
+                        <li><a href="https://www.youtube.com/watch?v=xp1tgjT_3k0">One-arm push-ups</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=vq5-vdgJc0I">Pistol squats</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=uZWjFe4fufA">Handstand push-ups</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=p7q0UhxPdLY&t=251s">Muscle up</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=UZ-1jwG7aQ4">Planche</a></li>
                     </ul>
-                </section>
-                <br/>
-                <br/>
-                <section>
-                    <h1>List of workouts that target the core.</h1>
-                    <br/>
-                        <br/>
-                    <ul>
-                        <li>Plank</li>
-                        <li>Glute Bridge</li>
-                        <li>Flutter Kicks</li>
-                        <li>Superman</li>
-                        <li>TRX Row</li>
-                        <li>Hollow Body Hold</li>
-                        <li>Russian Twist</li>
-                        <li>Barbell Rollout/Plank Walkout</li>
-                        <li>Hanging Leg Raises</li>
-                        <li>L-Sit</li>
-                        <li>Toes To Bar</li>
-
-                    </ul>
-                </section>
-
-
-                    <div class="gallery">
-                        <a target="_blank" href="src/images/muscles.jpg">
-                        <img src={muscles}  alt="Muscular Anatomy Chart" width="600" height="400"/>
-                        </a>
-                        <div class="desc">Muscular Anatomy Chart</div>
-                    </div>
-
-                    {/* {/* <div class="gallery">
-                        <a target="_blank" href="img_forest.jpg">
-                        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                    </div> */}
-
-                    <div class="gallery">
-                        <a target="_blank" href="src/images/workout.jpg">
-                        <img src={workout}  alt="Muscular Anatomy Chart" width="600" height="400"/>
-                        </a>
-                        <div class="desc">Workout Diagram</div>
-                    </div> 
-            </body>
+                </div>
+                </div>
+        </body>
         
-    
+    </html>
           
         );
     }
