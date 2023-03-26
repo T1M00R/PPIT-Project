@@ -32,16 +32,6 @@
 
 /* End of workouts page */
 
-.homeImage{
-   position: relative;
-   height: auto;
-   width: 100%;
-}
-
-.homeTxt{
-    text-align: center;
-}
-
 *{
     padding: 0;
     margin: 0;
@@ -165,8 +155,9 @@ nav a:hover {
     background: transparent;
     outline: none;
     color: var(--textColor);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     padding-left: 0%;
+    border: none;
 }
 
 header .nav-btn {

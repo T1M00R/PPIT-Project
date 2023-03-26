@@ -22,7 +22,7 @@ export class Macros extends React.Component{
               placeholder="       Enter Weight in LBS"/>
             </div>
     
-            <div className="d-grid">
+            <div>
               <button type="submit" className="button">
                 Submit
               </button>
