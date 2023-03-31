@@ -1,4 +1,5 @@
 import React from "react";
+import { message} from "antd";
 import "../styles/App.css"
 
 export class Calories extends React.Component {
@@ -16,9 +17,12 @@ export class Calories extends React.Component {
 
       //initialize handlesubmit method
       this.handleSubmit = this.handleSubmit.bind(this);
+
+      
   }
 
   handleSubmit(e) {
+
       e.preventDefault();
       //saving variables entered into local variables
       const { height, weight, age, gender, activity } = this.state;
@@ -47,7 +51,7 @@ export class Calories extends React.Component {
 
       }
       else{
-          alert("Incorrect input! Please enter 1 for 'Male' or 2 for 'Female'")
+          message.error("Incorrect input! Please enter 1 for 'Male' or 2 for 'Female'");
       }
 
       //if statement to take activity level into account
@@ -83,7 +87,7 @@ export class Calories extends React.Component {
           alert("Maintenance Calories: " + Math.round(Mcals) + "\nGain Weight: " + Math.round(gainW) + "\nLose Weight: " + Math.round(loseW));
 
       }else{
-          alert("Invalid Activity Option. please select 1-5.");
+        message.error("Invalid Activity Option. please select 1-5."); 
       }    
   }
 
@@ -91,7 +95,7 @@ export class Calories extends React.Component {
       return (
           <form onSubmit={this.handleSubmit}>
           <h1>Calorie Calculator</h1>
-  
+
           <div className="form">
             <input type="number" 
             className="form-control" 
