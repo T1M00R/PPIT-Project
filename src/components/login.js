@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { message } from "antd";
 import "../styles/App.css"
 
 export class Login extends Component {
@@ -39,13 +40,13 @@ export class Login extends Component {
         console.log(data, "userLogin");
 
         if(data.status === "ok"){
-          alert("Log In Successful");
+          message.success('Log In Successfull!');
           //store locally so can be used in other files
           window.localStorage.setItem("token", data.data);
-          window.location.href="./";
+          //window.location.href="./";
         }
         else{
-          alert("Invalid user. Please try again.");
+          message.error('Invalid User. Please try again.');
         }
       });
   }

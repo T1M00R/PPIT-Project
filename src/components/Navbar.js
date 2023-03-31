@@ -17,7 +17,7 @@ function Navbar(){
 
     return(
         <header>
-            <h3>Weights & Plates</h3>
+            <h3 className="Logo">Weights & Plates</h3>
             {/* changing the url with the click of navbar //options */}
             <nav ref={navRef}>
                 <a href="/">Home</a>

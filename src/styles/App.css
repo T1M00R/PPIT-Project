@@ -81,6 +81,12 @@ form{
     color: var(--textColor);
 }
 
+.Logo{
+    border: 1px solid #00ff11;
+    padding: 7px;
+    border-radius: 10px;
+}
+
 hr{
     border-color: #00ff11;
 }
@@ -149,7 +155,7 @@ div{
 .dropDown{
     position: absolute;
     top: 5.5rem;
-    right: 7rem;
+    right: 6.6rem;
     width: 160px;
     height: 90px;
     padding: 15px;

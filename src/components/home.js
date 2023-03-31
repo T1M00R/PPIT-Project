@@ -1,5 +1,4 @@
 import React from "react";
-import home from '../images/home.jpg';
 import "../styles/App.css"
 
 export class Home extends React.Component{

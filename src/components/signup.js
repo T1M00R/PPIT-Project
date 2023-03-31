@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { message } from "antd";
 import "../styles/App.css"
 
 export class Signup extends Component {
@@ -43,10 +44,10 @@ export class Signup extends Component {
         console.log(data, "userRegistered");
 
         if(data.status === "ok"){
-          alert("Sign up successful");
+          message.success('Sign up Successfull!');
         }
         else{
-          alert("There is already a user with these details. Try logging in.");
+          message.warning("There is already a user with these details. Try logging in.");
         }
       });
   }
