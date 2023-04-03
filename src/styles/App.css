@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 
+/* Progress bar */
+.progress-bar {
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    margin: 50px;
+    position: fixed;
+    bottom: 10%;
+    left: 100px;
+    right: 100px;
+    
+  }
+  
+  .progress-bar-inner {
+    height: 100%;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #4CAF50;
+  }
+
+  
+/* End of Progress bar */
+
 /* Workouts page */
 
 .workouts {
@@ -12,6 +37,8 @@
     width: 300;
     padding: 20px;
     text-align: left;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .img2 {
@@ -19,6 +46,8 @@
     width: 300;
     padding: 20px;
     text-align:left;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* End of workouts page */
