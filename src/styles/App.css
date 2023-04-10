@@ -31,6 +31,28 @@
     margin-right: 20px;
 }
 
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 -0.5rem;
+  }
+  
+  .gallery-item {
+    flex: 1;
+    margin: 0 0.5rem;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
 .img1 {
     width: 300;
     padding: 20px;
@@ -57,12 +79,29 @@
 /* End of workouts page */
 
 /* Levels page */
+
+.fitnessLevel{
+    
+    position: relative;
+    display:inline-block;
+    align-items:stretch;
+    justify-content: center;
+    top: 10%;
+}
+
 .category {
     font-weight: bold;
   }
 
   .exercise {
     margin-left: 20px;
+  }
+
+  .categories {
+    position: relative;
+    display:inline-block;
+    align-items:stretch;
+    justify-content: center;
   }
 
   .beginner {
@@ -72,9 +111,12 @@
     border: 2px solid #00ff11;
     margin-top: 10px;
     margin-left: 200px;
+    margin-right: 50px;
     padding: 10px;
     width: 20%;
     height: 300px;
+    text-align: center;
+    
   }
 
   .intermediate {
@@ -87,6 +129,8 @@
     padding: 10px;
     width: 20%;
     height: 300px;
+    margin-right: 50px;
+    text-align: center;
   }
 
   .advanced {
@@ -98,6 +142,8 @@
     padding: 10px;
     width: 20%;
     height: 300px;
+    margin-right: 50px;
+    text-align: center;
   }
 
 
